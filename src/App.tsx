@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { pages } from './data';
 import { ProgressBar } from './components/ProgressBar';
+import { IntroPage } from './pages/IntroPage';
 import { QuestionPage } from './pages/QuestionPage';
 import { LoadingPage } from './pages/LoadingPage';
 import { DiagnosticPage } from './pages/DiagnosticPage';
@@ -22,7 +23,7 @@ export default function App() {
 
   // Determine progress bar value
   let progress = 0;
-  if (currentPage.type === 'hook' || currentPage.type === 'sales') {
+  if (currentPage.type === 'intro' || currentPage.type === 'hook' || currentPage.type === 'sales') {
     progress = 0; // Don't show progress bar
   } else if (currentPage.type === 'loading') {
     progress = loadingProgress;
@@ -37,6 +38,9 @@ export default function App() {
       {showProgressBar && <ProgressBar progress={progress} />}
 
       <AnimatePresence mode="wait">
+        {currentPage.type === 'intro' && (
+          <IntroPage key={currentPage.id} page={currentPage} onNext={handleNext} />
+        )}
         {currentPage.type === 'hook' && (
           <QuestionPage key={currentPage.id} page={currentPage} onNext={handleNext} />
         )}

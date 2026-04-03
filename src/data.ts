@@ -5,7 +5,7 @@ export interface Option {
 
 export interface PageData {
   id: number;
-  type: 'hook' | 'question' | 'loading' | 'diagnostic' | 'sales';
+  type: 'intro' | 'hook' | 'question' | 'loading' | 'diagnostic' | 'sales';
   progress?: number;
   title?: string;
   subtitle?: string;
@@ -14,6 +14,11 @@ export interface PageData {
 }
 
 export const pages: PageData[] = [
+  {
+    id: 0,
+    type: 'intro',
+    imageUrl: 'https://images.unsplash.com/photo-1518599904199-0ca897819ddb?q=80&w=2000&auto=format&fit=crop'
+  },
   {
     id: 1,
     type: 'hook',
