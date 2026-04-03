@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { PageData } from '../data';
 
@@ -8,6 +9,16 @@ interface SalesPageProps {
 
 export function SalesPage({ page }: SalesPageProps) {
   const checkoutUrl = "https://go.pepperpay.com.br/irl0x";
+
+  useEffect(() => {
+    // Push GTM event when the sales page loads
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      'event': 'quiz_complete',
+      'quiz_step': '12',
+      'produto': 'codigo_da_atracao'
+    });
+  }, []);
 
   return (
     <motion.div 
