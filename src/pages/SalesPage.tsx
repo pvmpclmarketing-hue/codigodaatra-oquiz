@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { PageData } from '../data';
+import { sendMetaEvent } from '../services/metaService';
 
 interface SalesPageProps {
   key?: number | string;
@@ -18,7 +19,43 @@ export function SalesPage({ page }: SalesPageProps) {
       'quiz_step': '12',
       'produto': 'codigo_da_atracao'
     });
+
+    // Meta Pixel: ViewContent
+    if ((window as any).fbq) {
+      (window as any).fbq('track', 'ViewContent', {
+        content_name: 'Código da Atração',
+        content_category: 'Quiz Funnel',
+        value: 37.00,
+        currency: 'BRL'
+      });
+    }
+
+    // Meta Conversions API: ViewContent
+    sendMetaEvent('ViewContent', {
+      content_name: 'Código da Atração',
+      content_category: 'Quiz Funnel',
+      value: 37.00,
+      currency: 'BRL'
+    });
   }, []);
+
+  const handleCheckoutClick = () => {
+    // Meta Pixel: InitiateCheckout
+    if ((window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout', {
+        content_name: 'Código da Atração',
+        value: 37.00,
+        currency: 'BRL'
+      });
+    }
+
+    // Meta Conversions API: InitiateCheckout
+    sendMetaEvent('InitiateCheckout', {
+      content_name: 'Código da Atração',
+      value: 37.00,
+      currency: 'BRL'
+    });
+  };
 
   return (
     <motion.div 
@@ -187,6 +224,7 @@ export function SalesPage({ page }: SalesPageProps) {
           <div className="flex flex-col items-center space-y-6 pt-8">
             <motion.a
               href={checkoutUrl}
+              onClick={handleCheckoutClick}
               className="w-full md:w-auto px-8 md:px-12 py-6 bg-[var(--color-brand-gold)] text-[var(--color-brand-bg)] font-bold rounded-full text-lg md:text-xl hover:bg-[#d4b55e] transition-colors flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(201,168,76,0.3)] text-center"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
@@ -214,6 +252,7 @@ export function SalesPage({ page }: SalesPageProps) {
           <div className="flex justify-center pb-16">
             <motion.a
               href={checkoutUrl}
+              onClick={handleCheckoutClick}
               className="w-full md:w-auto px-8 md:px-12 py-6 bg-[var(--color-brand-gold)] text-[var(--color-brand-bg)] font-bold rounded-full text-lg md:text-xl hover:bg-[#d4b55e] transition-colors flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(201,168,76,0.3)] text-center"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1 }}

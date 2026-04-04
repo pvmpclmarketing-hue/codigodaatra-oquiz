@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { PageData } from '../data';
+import { sendMetaEvent } from '../services/metaService';
 
 interface DiagnosticPageProps {
   key?: number | string;
@@ -12,6 +13,20 @@ export function DiagnosticPage({ page, onNext }: DiagnosticPageProps) {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
+    // Meta Pixel: Lead
+    if ((window as any).fbq) {
+      (window as any).fbq('track', 'Lead', {
+        content_name: 'Diagnostic Result',
+        content_category: 'Quiz Funnel'
+      });
+    }
+
+    // Meta Conversions API
+    sendMetaEvent('Lead', {
+      content_name: 'Diagnostic Result',
+      content_category: 'Quiz Funnel'
+    });
+
     // Show button after the third paragraph is fully visible
     // Paragraphs appear at 0.6s intervals. 
     // P1: 0.6s, P2: 1.2s, P3: 1.8s. Let's show button at 2.5s.

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { PageData } from '../data';
+import { sendMetaEvent } from '../services/metaService';
 
 interface IntroPageProps {
   key?: number | string;
@@ -8,6 +9,22 @@ interface IntroPageProps {
 }
 
 export function IntroPage({ page, onNext }: IntroPageProps) {
+  const handleStart = () => {
+    // Meta Pixel: Custom Event
+    if ((window as any).fbq) {
+      (window as any).fbq('trackCustom', 'QuizStart', {
+        content_name: 'Código da Atração'
+      });
+    }
+
+    // Meta Conversions API
+    sendMetaEvent('QuizStart', {
+      content_name: 'Código da Atração'
+    });
+
+    onNext();
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -61,7 +78,7 @@ export function IntroPage({ page, onNext }: IntroPageProps) {
           className="w-full pt-8"
         >
           <button
-            onClick={onNext}
+            onClick={handleStart}
             className="w-full md:w-auto px-10 py-5 bg-[var(--color-brand-gold)] text-[var(--color-brand-bg)] font-bold rounded-full text-lg md:text-xl hover:bg-[#d4b55e] transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(201,168,76,0.3)] flex items-center justify-center gap-3 mx-auto"
           >
             INICIAR DIAGNÓSTICO AGORA
