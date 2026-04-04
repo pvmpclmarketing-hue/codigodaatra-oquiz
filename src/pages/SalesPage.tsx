@@ -86,7 +86,7 @@ export function SalesPage({ page }: SalesPageProps) {
                   </li>
                   <li>
                     <strong className="text-white block mb-1">05. O Ritual de Manifestação</strong>
-                    O protocolo passo a passo para manifestar o retorno ou a aproximação da pessoa amada, com datas, horários e alinhamentos energéticos precisos.
+                    O protocolo passo a passo para manifestar o retorno ou a aproximação dele, com datas, horários e alinhamentos energéticos precisos.
                   </li>
                   <li>
                     <strong className="text-white block mb-1">06. A Manutenção da Chama</strong>
@@ -207,7 +207,7 @@ export function SalesPage({ page }: SalesPageProps) {
 
           <div className="pt-16 pb-8 text-center max-w-2xl mx-auto">
             <p className="text-xl font-serif italic text-gray-300 leading-relaxed">
-              "A pessoa que você ama existe no campo quântico esperando pela sua frequência certa. O Código da Atração vai te ensinar exatamente como chegar até ela no plano invisível que antecede toda realidade visível."
+              "A pessoa que você ama existe no campo quântico esperando pela sua frequência certa. O Código da Atração vai te ensinar exatamente como chegar até ele no plano invisível que antecede toda realidade visível."
             </p>
           </div>
 

@@ -75,7 +75,7 @@ export function DiagnosticPage({ page, onNext }: DiagnosticPageProps) {
             transition={{ delay: 1.2, duration: 0.8 }}
           >
             <p>
-              Quando duas pessoas criam um vínculo emocional intenso, seus Campos Morfogenéticos, as camadas invisíveis de energia que cada ser humano projeta, se entrelaçam. Quando há ruptura ou distanciamento, esse campo entra em modo de autopreservação: ele se fecha, cria resistência, e passa a emitir uma frequência que involuntariamente repele a aproximação, mesmo quando a outra pessoa ainda tem sentimentos. Não é rejeição. É um bloqueio energético ativo. E a pessoa amada, muitas vezes, nem sabe por que se afastou.
+              Quando duas pessoas criam um vínculo emocional intenso, seus Campos Morfogenéticos, as camadas invisíveis de energia que cada ser humano projeta, se entrelaçam. Quando há ruptura ou distanciamento, esse campo entra em modo de autopreservação: ele se fecha, cria resistência, e passa a emitir uma frequência que involuntariamente repele a aproximação, mesmo quando ele ainda tem sentimentos. Não é rejeição. É um bloqueio energético ativo. E ele, muitas vezes, nem sabe por que se afastou.
             </p>
           </motion.div>
 
@@ -85,7 +85,7 @@ export function DiagnosticPage({ page, onNext }: DiagnosticPageProps) {
             transition={{ delay: 1.8, duration: 0.8 }}
           >
             <p>
-              A boa notícia, e ela é grande, é que o Campo Morfogenético pode ser reconfigurado. Quando você aprende a emitir a frequência certa, o campo do outro responde. Não como manipulação, mas como ressonância: da mesma forma que um diapasão faz outro diapasão vibrar sem tocá-lo. Existe um código específico de realinhamento que, quando aplicado nas 7 camadas certas, faz com que a pessoa amada comece a sentir uma atração magnética, inexplicável e genuína, como se algo dentro dela a chamasse de volta para você.
+              A boa notícia, e ela é grande, é que o Campo Morfogenético pode ser reconfigurado. Quando você aprende a emitir a frequência certa, o campo do outro responde. Não como manipulação, mas como ressonância: da mesma forma que um diapasão faz outro diapasão vibrar sem tocá-lo. Existe um código específico de realinhamento que, quando aplicado nas 7 camadas certas, faz com que ele comece a sentir uma atração magnética, inexplicável e genuína, como se algo dentro dele o chamasse de volta para você.
             </p>
           </motion.div>
         </div>

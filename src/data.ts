@@ -22,11 +22,11 @@ export const pages: PageData[] = [
   {
     id: 1,
     type: 'hook',
-    title: 'Essa pessoa ainda ocupa seus pensamentos, mesmo quando você tenta parar de pensar nela?',
+    title: 'Essa pessoa ainda ocupa seus pensamentos, mesmo quando você tenta parar de pensar nele?',
     subtitle: 'Há algo acontecendo entre vocês que vai muito além do que os olhos conseguem ver. Responda com honestidade, pois o que você descobrir aqui pode mudar tudo.',
     options: [
-      { id: 'A', text: '🔥 Sim, ela está na minha cabeça o tempo todo, mesmo sem querer' },
-      { id: 'B', text: '💭 Às vezes, mas sinto que estou perdendo a conexão com ela' }
+      { id: 'A', text: '🔥 Sim, ele está na minha cabeça o tempo todo, mesmo sem querer' },
+      { id: 'B', text: '💭 Às vezes, mas sinto que estou perdendo a conexão com ele' }
     ],
     imageUrl: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&q=80'
   },
@@ -65,7 +65,7 @@ export const pages: PageData[] = [
     title: 'Como costuma ser a comunicação entre vocês quando as coisas ficam tensas?',
     subtitle: 'A forma como nos comunicamos, ou deixamos de comunicar, pode criar "fugas de energia" que enfraquecem a conexão sem que nenhum dos dois perceba. Qual dessas situações soa familiar?',
     options: [
-      { id: 'A', text: '🗣️ Eu falo demais tentando resolver, e ela parece se fechar ainda mais' },
+      { id: 'A', text: '🗣️ Eu falo demais tentando resolver, e ele parece se fechar ainda mais' },
       { id: 'B', text: '🔕 Os dois ficam em silêncio, ninguém sabe como começar' },
       { id: 'C', text: '🎭 Conversamos sobre tudo, menos sobre o que realmente importa' },
       { id: 'D', text: '📲 A comunicação virou superficial, com respostas curtas e sem profundidade' }
@@ -79,8 +79,8 @@ export const pages: PageData[] = [
     title: 'Vou ser direta com você agora.\n\nDe todos os sentimentos que essa situação desperta… qual dói mais fundo?',
     subtitle: 'Esta é a pergunta mais importante do quiz. O que você escolher aqui vai determinar qual bloqueio vibracional está agindo sobre a sua conexão com essa pessoa.',
     options: [
-      { id: 'A', text: '💔 A sensação de que, por mais que eu faça, nunca é suficiente para ela ficar' },
-      { id: 'B', text: '🫙 O silêncio, não saber o que ela pensa e imaginar o pior' },
+      { id: 'A', text: '💔 A sensação de que, por mais que eu faça, nunca é suficiente para ele ficar' },
+      { id: 'B', text: '🫙 O silêncio, não saber o que ele pensa e imaginar o pior' },
       { id: 'C', text: '🪞 A dúvida sobre mim mesma(o). Será que fiz algo errado? Sou eu o problema?' },
       { id: 'D', text: '🌊 A impotência de sentir que perdi o controle sobre algo que importa muito pra mim' }
     ],
@@ -94,7 +94,7 @@ export const pages: PageData[] = [
     subtitle: 'Não é imaginação sua. Há um fenômeno real, estudado pela física quântica e pela teoria dos Campos Morfogenéticos, que cria barreiras energéticas entre duas pessoas que já tiveram uma conexão intensa.\n\nQual dessas sensações você já experimentou?',
     options: [
       { id: 'A', text: '🧱 Sim, tentei me aproximar e havia uma resistência que não conseguia explicar' },
-      { id: 'B', text: '🌫️ É como se ela estivesse presente fisicamente, mas completamente ausente em energia' },
+      { id: 'B', text: '🌫️ É como se ele estivesse presente fisicamente, mas completamente ausente em energia' },
       { id: 'C', text: '📡 Sinto que nossa "frequência" desalinhou. Antes havia fluidez, agora há ruído' },
       { id: 'D', text: '🤔 Nunca tinha pensado assim, mas agora que você disse… faz muito sentido' }
     ],
@@ -104,13 +104,13 @@ export const pages: PageData[] = [
     id: 7,
     type: 'question',
     progress: 72,
-    title: 'Desde que esse distanciamento começou… ela aparece nos seus sonhos, nos seus pensamentos do nada, ou você vê coisas que te lembram dela em momentos completamente aleatórios?',
+    title: 'Desde que esse distanciamento começou… ele aparece nos seus sonhos, nos seus pensamentos do nada, ou você vê coisas que te lembram dele em momentos completamente aleatórios?',
     subtitle: 'Isso tem um nome. A física quântica chama de "entrelaçamento de partículas", onde duas energias que já se tocaram permanecem conectadas independentemente da distância física ou emocional.\n\nO que você experiencia com mais frequência?',
     options: [
-      { id: 'A', text: '🌙 Ela aparece nos meus sonhos com uma frequência que não consigo ignorar' },
-      { id: 'B', text: '⚡ Penso nela de repente, sem motivo, e logo depois recebo uma mensagem ou notícia dela' },
-      { id: 'C', text: '🪄 Vejo números, músicas ou lugares que me lembram dela em momentos aleatórios' },
-      { id: 'D', text: '🫀 Sinto fisicamente quando ela está pensando em mim, uma sensação no peito inexplicável' }
+      { id: 'A', text: '🌙 Ele aparece nos meus sonhos com uma frequência que não consigo ignorar' },
+      { id: 'B', text: '⚡ Penso nele de repente, sem motivo, e logo depois recebo uma mensagem ou notícia dele' },
+      { id: 'C', text: '🪄 Vejo números, músicas ou lugares que me lembram dele em momentos aleatórios' },
+      { id: 'D', text: '🫀 Sinto fisicamente quando ele está pensando em mim, uma sensação no peito inexplicável' }
     ],
     imageUrl: 'https://images.unsplash.com/photo-1464802686167-b939a6910659?w=800&q=80'
   },
@@ -121,8 +121,8 @@ export const pages: PageData[] = [
     title: 'Você já tentou agir para reconquistar essa pessoa e sentiu que algo misterioso bloqueava o resultado?',
     subtitle: 'Como se cada tentativa certa produzisse o efeito errado. Isso não é azar. É o Campo Morfogenético entre vocês operando em frequência de bloqueio, e só é possível sentir, nunca ver.\n\nQual das situações abaixo soa mais familiar?',
     options: [
-      { id: 'A', text: '🔄 Tentei me aproximar com carinho e ela se afastou mais, como se eu a repelisse' },
-      { id: 'B', text: '🤫 Me afastei de propósito esperando que ela viesse, e ela simplesmente não veio' },
+      { id: 'A', text: '🔄 Tentei me aproximar com carinho e ele se afastou mais, como se eu o repelisse' },
+      { id: 'B', text: '🤫 Me afastei de propósito esperando que ele viesse, e ele simplesmente não veio' },
       { id: 'C', text: '📝 Mandei a mensagem certa, na hora certa, e mesmo assim não teve o efeito esperado' },
       { id: 'D', text: '😮💨 Fiz tudo que me disseram para fazer e nada funcionou, há algo maior agindo aqui' }
     ],
